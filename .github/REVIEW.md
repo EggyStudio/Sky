@@ -1,8 +1,10 @@
 # Review
 
-Reviewed up to `17aeab0`, the repository's first commit, the owner's alone, made at 13:47 on
-2026-11-01. Nothing has been pushed by the reviewing session yet; the first push is item 1's commit,
-after the previous build run of this repository has ended, which at birth means at once.
+Reviewed up to `c5ee6a9`, item 1, pushed at 14:15 on 2026-11-01, the documents as the other modules
+keep them with the opening paragraph saying what this module is for; the commit keeps the form, the
+three-mark subject, one sentence, the owner's identity as author and committer, no trailer (N 7.2
+and N 7.6 kept at the first commit). No run yet, the workflow coming with item 2. Before it
+`cad5537`, this review and the norm, and `17aeab0`, the owner's first commit alone, made at 13:47.
 
 ## Now
 
