@@ -3,7 +3,9 @@
 Reviewed up to `c5ee6a9`, item 1, pushed at 14:15 on 2026-11-01, the documents as the other modules
 keep them with the opening paragraph saying what this module is for; the commit keeps the form, the
 three-mark subject, one sentence, the owner's identity as author and committer, no trailer (N 7.2
-and N 7.6 kept at the first commit). No run yet, the workflow coming with item 2. Before it
+and N 7.6 kept at the first commit). After it `bff9e47`, item 2, pushed at 14:15, the skeleton as
+Vegetation's with the name changed, the workflow's comment giving this machine's 4 s and 2 s, its
+run green at 14:18 on the three systems in about a minute each, the repository's first. Before it
 `cad5537`, this review and the norm, and `17aeab0`, the owner's first commit alone, made at 13:47.
 
 ## Now
@@ -99,3 +101,18 @@ None yet.
     Decision 79).
 
 ## Replies
+
+Item 3's second part, from 3DEngine's item 170, is in the commit after `bff9e47`. It holds
+`Atmosphere` with HDRP's Earth as data and turbidity as 1 plus the aerosols' optical depth over the
+molecules' at 550 nm, `Sun.At` (lux, color, kelvin), `SkyLight` (Hillaire's single and multiple
+scattering in candelas a square meter and lux), `Moon`, `Night` and `Colorimetry`, with 20 tests.
+Read against the scene in HDRP, the transmittance at 53.97 degrees is 0.926, 0.850 and 0.710 here
+against 0.925, 0.849 and 0.710 by HDRP's own formula. The sun reaches the ground at 109,960 lux and
+5,026 K here, where the scene's light, 97,050 lux at 5,633 K outside the air, reaches 73,900 lux at
+4,924 K through HDRP's transmittance, which its light loop multiplies the light by. The color holds
+within a hundred kelvin, and the lux is two thirds of the sun's here, since the scene sets 120,000
+lux times the sine of the sun's height outside the air. Its sky volume's intensity mode is 2,
+Multiplier in HDRP's order of Exposure, Lux and Multiplier, at 1, so its 20,000 lux is never read,
+and its sky is the atmosphere's lit by that light, 7,860 lux on a level surface at 54 degrees here
+for a sun of 128,000. The scene's TimeOfDay puts the sun at 16.55, 51.40 and 53.97 degrees at 8:00,
+12:00 and 15:05 on 27 June of its year 75.

@@ -6,6 +6,19 @@ the looks by the sun's height. Both engines light from its numbers while each dr
 references no engine, and each engine implements the interfaces it declares where it binds the
 module.
 
+## What it holds
+
+| Type | Gives |
+|---|---|
+| `Atmosphere` | The air as data, the planet's radius, the molecules' scattering, the aerosols' extinction and the ozone's absorption with their heights, the ground's albedo, and the transmittance along a way through it. `Atmosphere.Earth` is the Earth of Unity's HDRP, and `WithTurbidity` sets its haze |
+| `Sun` | The sun's light outside the air, 128,000 lux at 5,772 K, and `Sun.At`, its lux, color and color temperature at the ground for its height over the horizon |
+| `SkyLight` | The sky's luminance along a way and its illuminance on a level surface, the sun's light scattered once and more than once, in candelas a square meter and lux |
+| `Moon` and `Night` | The moon's light by its phase and height, and a moonless sky's luminance and illuminance |
+| `Colorimetry` | Linear sRGB's luminance and a black body's color, to and from its temperature |
+
+Read against HDRP's Earth, the sun 54 degrees high reaches the ground at 110,000 lux and 5,026 K
+and the sky lights a level surface with 7,860 lux beside the sun's 88,900 (`dotnet test Sky.Tests`).
+
 ## Taking it into an engine
 
 An engine adds the repository as a git submodule under `modules/` and references its project, here
