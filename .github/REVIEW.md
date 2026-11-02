@@ -1,12 +1,14 @@
 # Review
 
-Reviewed up to `c5ee6a9`, item 1, pushed at 14:15 on 2026-11-01, the documents as the other modules
-keep them with the opening paragraph saying what this module is for; the commit keeps the form, the
-three-mark subject, one sentence, the owner's identity as author and committer, no trailer (N 7.2
-and N 7.6 kept at the first commit). After it `bff9e47`, item 2, pushed at 14:15, the skeleton as
-Vegetation's with the name changed, the workflow's comment giving this machine's 4 s and 2 s, its
-run green at 14:18 on the three systems in about a minute each, the repository's first. Before it
-`cad5537`, this review and the norm, and `17aeab0`, the owner's first commit alone, made at 13:47.
+Reviewed up to `bff9e47`, item 2, pushed at 14:15 on 2026-11-01, its run green at 14:18 on the three
+systems in about a minute each, the repository's first, the skeleton as Vegetation's with the name
+changed. After it `a5e474b`, item 3's second part by the 3DEngine session, pushed at 23:34, its run
+green on the three systems in about a minute each; it keeps the form and references no engine.
+Before it `c5ee6a9`, item 1, the documents as the other modules keep them with the opening paragraph
+saying what this module is for; the commit keeps the form, the three-mark subject, one sentence, the
+owner's identity as author and committer, no trailer (N 7.2 and N 7.6 kept at the first commit).
+Before it `cad5537`, this review and the norm, and `17aeab0`, the owner's first commit alone, made
+at 13:47.
 
 ## Now
 
@@ -48,12 +50,29 @@ its model here from the first commit rather than moving it later.
     Each engine draws its own sky from the module's numbers, BevyCSharp through Bevy's atmosphere,
     3DEngine through item 170's pass, so the two light from one sun and one sky. One commit a part,
     the strict build and the suite green, a Shared line in the engines' REVIEW.md when a part lands.
+    The second part is done at `a5e474b` on 2026-11-01, read at 23:34: Atmosphere as HDRP's Earth in
+    data with turbidity from the aerosol's and Rayleigh's depths at 550 nm and a transmittance over
+    a round planet, Sun.At in lux, color and kelvin, SkyLight as single scattering with Hillaire's
+    multiple-scattering term in candela a square meter and lux, Moon after Krisciunas and Schaefer,
+    Night and Colorimetry, 20 tests, the strict build clean, no engine referenced. The transmittance
+    at 53.97 degrees 0.926, 0.850 and 0.710 against HDRP's 0.925, 0.849 and 0.710; the sun at the
+    ground 109,960 lux at 5,026 K; the reference scene's light of 97,050 lux at 5,633 K stands
+    outside the air and HDRP's light loop multiplies it by that transmittance, 73,900 lux at 4,924 K
+    at the ground, within 100 K of the module, the lux two thirds of it since the scene's time of
+    day sets 120,000 times the sine of the height; the scene's sky at intensity mode Multiplier at
+    1, its 20,000 lux never read, the sky 7,860 lux on a level surface at 54 degrees, which
+    3DEngine's item 170 takes in place of the example's 20,000. The first part, BevyCSharp's clock,
+    weather and looks, follows its items 90 and 68.
 
 4. **The engines take the module.** Each engine adds this repository as a git submodule under
     `modules/` and references its project, its workflows checking submodules out, its own clock,
     light and weather code becoming the binding of the module's model (N 2.1) and the rest deleted;
     a change used by an engine is committed here first and pushed before the engine's commit that
-    moves the pointer. One commit an engine, after item 3's part that engine uses.
+    moves the pointer. One commit an engine, after item 3's part that engine uses. 3DEngine takes
+    the module at its `bd081fa6` (item 170's first commit), read at 00:14 on 2026-11-02, the
+    submodule under modules/ at `a5e474b`, referenced with PrivateAssets all so its package carries
+    the module's assembly and documentation, every building job checking submodules out;
+    BevyCSharp's turn comes with its item 91.
 
 ## Verdicts
 
@@ -116,3 +135,15 @@ Multiplier in HDRP's order of Exposure, Lux and Multiplier, at 1, so its 20,000 
 and its sky is the atmosphere's lit by that light, 7,860 lux on a level surface at 54 degrees here
 for a sun of 128,000. The scene's TimeOfDay puts the sun at 16.55, 51.40 and 53.97 degrees at 8:00,
 12:00 and 15:05 on 27 June of its year 75.
+
+Item 3's first part, from BevyCSharp's item 91, in the commit carrying this line. SkyClock,
+WeatherState and LookCycle move from BevyCSharp as they are, with the six types they stand on,
+DayPhase, WeatherConditions, WeatherPreset, WeatherClimate, LookSettings and LookCurve, none of
+which references an engine. The changes on the way are the namespace, Sky, BevyCSharp's Vec3
+becoming System.Numerics' Vector3 as Sun and Atmosphere have it, and the five references to
+BevyCSharp's Render in the documentation said in words, an engine's night sky, weather and look.
+Their tests move with them, SkyClockTests and WeatherStateTests whole and the five of LookCycleTests
+that need no engine, the one that draws staying in BevyCSharp beside the look's other drawn tests.
+The README's table names the three. The strict build is clean and the tests pass, 40 where there
+were 20 (dotnet test Sky.Tests). BevyCSharp's commit that takes the module follows once this one is
+pushed.

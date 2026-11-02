@@ -15,6 +15,9 @@ module.
 | `SkyLight` | The sky's luminance along a way and its illuminance on a level surface, the sun's light scattered once and more than once, in candelas a square meter and lux |
 | `Moon` and `Night` | The moon's light by its phase and height, and a moonless sky's luminance and illuminance |
 | `Colorimetry` | Linear sRGB's luminance and a black body's color, to and from its temperature |
+| `SkyClock` | Where the sun, the moon and the stars stand at an hour of a day of the year for a latitude, by spherical astronomy, with the moon's phase, how far the stars have turned about the pole, and the part of the day, a `DayPhase`, the sun's height makes it |
+| `WeatherState` | The weather as it goes, its `WeatherConditions` easing toward a `WeatherPreset` or toward a forecast a `WeatherClimate` writes from the clock, the wind gusting and the ground wetting in rain and whitening under snow |
+| `LookCycle` | A camera's look by the sun's height, the `LookSettings` kept at heights of the sun and worked out between the two about any other, its curve a `LookCurve` |
 
 Read against HDRP's Earth, the sun 54 degrees high reaches the ground at 110,000 lux and 5,026 K
 and the sky lights a level surface with 7,860 lux beside the sun's 88,900 (`dotnet test Sky.Tests`).
