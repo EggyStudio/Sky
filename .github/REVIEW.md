@@ -1,14 +1,16 @@
 # Review
 
-Reviewed up to `bff9e47`, item 2, pushed at 14:15 on 2026-11-01, its run green at 14:18 on the three
-systems in about a minute each, the repository's first, the skeleton as Vegetation's with the name
-changed. After it `a5e474b`, item 3's second part by the 3DEngine session, pushed at 23:34, its run
-green on the three systems in about a minute each; it keeps the form and references no engine.
-Before it `c5ee6a9`, item 1, the documents as the other modules keep them with the opening paragraph
-saying what this module is for; the commit keeps the form, the three-mark subject, one sentence, the
-owner's identity as author and committer, no trailer (N 7.2 and N 7.6 kept at the first commit).
-Before it `cad5537`, this review and the norm, and `17aeab0`, the owner's first commit alone, made
-at 13:47.
+Reviewed up to `a5e474b`, item 3's second part by the 3DEngine session, pushed at 23:34 on
+2026-11-01, its run green at 23:36 on the three systems in about a minute each; it keeps the form
+and references no engine. After it `fbc385e`, item 3's first part by the BevyCSharp session, pushed
+at 20:42 on 2026-11-02, its run green at 20:44 on the three systems in about a minute each; it keeps
+the form and references no engine. Before it `bff9e47`, item 2, pushed at 14:15 on 2026-11-01, its
+run green at 14:18 on the three systems in about a minute each, the repository's first, the skeleton
+as Vegetation's with the name changed. Before it `c5ee6a9`, item 1, the documents as the other
+modules keep them with the opening paragraph saying what this module is for; the commit keeps the
+form, the three-mark subject, one sentence, the owner's identity as author and committer, no trailer
+(N 7.2 and N 7.6 kept at the first commit). Before it `cad5537`, this review and the norm, and
+`17aeab0`, the owner's first commit alone, made at 13:47.
 
 ## Now
 
@@ -62,7 +64,16 @@ its model here from the first commit rather than moving it later.
     day sets 120,000 times the sine of the height; the scene's sky at intensity mode Multiplier at
     1, its 20,000 lux never read, the sky 7,860 lux on a level surface at 54 degrees, which
     3DEngine's item 170 takes in place of the example's 20,000. The first part, BevyCSharp's clock,
-    weather and looks, follows its items 90 and 68.
+    weather and looks, follows its items 90 and 68. The first part is done at `fbc385e` on
+    2026-11-02, read at 20:42, SkyClock, WeatherState and LookCycle with the six types they stand
+    on, DayPhase, WeatherConditions, WeatherPreset, WeatherClimate, LookSettings and LookCurve,
+    under the namespace Sky with Vector3 from System.Numerics, the crefs into the engine as prose
+    and two summaries written engine-neutral; SkyClockTests and WeatherStateTests whole and five of
+    LookCycleTests, 40 tests where 20, the strict build clean; the README's table gaining the three.
+    Both parts landed, the item is done; BevyCSharp takes the module under its item 91 and 3DEngine
+    has it since `bd081fa6`. Two doc comments in LookSettings.cs name 3DEngine in prose, its frame's
+    order and its block game's look; no type or package is referenced, so N 2.1 holds, and the two
+    sentences are written engine-neutral with the next commit that touches the file.
 
 4. **The engines take the module.** Each engine adds this repository as a git submodule under
     `modules/` and references its project, its workflows checking submodules out, its own clock,
@@ -72,7 +83,10 @@ its model here from the first commit rather than moving it later.
     the module at its `bd081fa6` (item 170's first commit), read at 00:14 on 2026-11-02, the
     submodule under modules/ at `a5e474b`, referenced with PrivateAssets all so its package carries
     the module's assembly and documentation, every building job checking submodules out;
-    BevyCSharp's turn comes with its item 91.
+    BevyCSharp's turn comes with its item 91. BevyCSharp takes the module at its `1ea6d865` (item
+    91), read at 21:35 on 2026-11-02, the submodule under modules/ at `fbc385e`, referenced with
+    PrivateAssets all, its nine files out and its users reading the module. Both engines take the
+    module; the item is done.
 
 ## Verdicts
 
